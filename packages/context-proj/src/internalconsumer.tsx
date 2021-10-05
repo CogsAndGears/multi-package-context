@@ -9,9 +9,11 @@ export default function InternalConsumer(): JSX.Element {
 
   return (
     <div>
-      <div>From Internal Consumer</div>
-      <span>My string is: {myContext.someString}</span>
-      <span>My number is: {myNumber}</span>
+      <h1>From Internal Consumer</h1>
+      <ul>
+        <li>My string is: {myContext.someString}</li>
+        <li>My number is: {myNumber}</li>
+      </ul>
     </div>
   );
 }

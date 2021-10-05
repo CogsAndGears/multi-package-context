@@ -9,9 +9,11 @@ export default function MyConsumer1(): JSX.Element {
 
   return (
     <div>
-      <div>From MyConsumer1</div>
-      <span>My string is: {myContext.someString}</span>
-      <span>My number is: {myNumber}</span>
+      <h1>From MyConsumer1</h1>
+      <ul>
+        <li>My string is: {myContext.someString}</li>
+        <li>My number is: {myNumber}</li>
+      </ul>
     </div>
   );
 }
