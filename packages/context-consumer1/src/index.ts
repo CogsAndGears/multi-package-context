@@ -1,0 +1,1 @@
+export { default as MyConsumer1 } from './myconsumer1';
