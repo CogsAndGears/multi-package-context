@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": false,
+    // output .d.ts declaration files for consumers
+    "declaration": false,
+    "sourceMap": false,
+    // stricter type-checking for stronger correctness. Recommended by TS
+    "strict": true,
+    // use Node's module resolution algorithm, instead of the legacy TS one
+    "moduleResolution": "node",
+    // transpile JSX to React.createElement
+    // interop between ESM and CJS modules. Recommended by TS
+    "esModuleInterop": true,
+    // significant perf increase by skipping checking .d.ts files, particularly those in node_modules. Recommended by TS
+    "skipLibCheck": true,
+    // error out if import and file system have a casing mismatch. Recommended by TS
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "outDir": "./dist/esm"
+  },
+  "exclude": [
+    "node_modules",
+  ]
+}
