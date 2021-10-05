@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@next/env": "^10.2.3",
+    "context-consumer1": "^0.1.0",
+    "context-consumer2": "^0.1.0",
+    "context-proj": "^0.1.0",
     "next": "10.2.3",
     "react": "17.0.2"
   },
