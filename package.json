@@ -11,7 +11,7 @@
   "scripts": {
     "start": "cd packages/app && npm start",
     "bootstrap": "\"$npm_execpath\" install && lerna link",
-    "build": "lerna run build",
+    "build": "lerna run build"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
