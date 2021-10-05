@@ -1,2 +1,3 @@
 export { default as MyContext } from './mycontext';
-export { default as InternalConsumerr } from './internalconsumer';
+export type { MyContextType } from './mycontext';
+export { default as InternalConsumer } from './internalconsumer';

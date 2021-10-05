@@ -3,7 +3,17 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
+import { MyContext, InternalConsumer } from 'context-proj';
+import type { MyContextType } from 'context-proj';
+import { MyConsumer1 } from 'context-consumer1';
+import { MyConsumer2 } from 'context-consumer2';
+
+
 export default function Home(): JSX.Element {
+  const myContext: MyContextType = {
+    someFunction: () => 12,
+    someString: 'I changed it!',
+  };
   return (
     <div className={styles.container}>
       <Head>
@@ -14,6 +24,11 @@ export default function Home(): JSX.Element {
 
       <main className={styles.main}>
         <div>
+          <MyContext.Provider value={myContext}>
+            <InternalConsumer />
+            <MyConsumer1 />
+            <MyConsumer2 />
+          </MyContext.Provider>
         </div>
       </main>
     </div>
